@@ -1,0 +1,30 @@
+{
+    "name": "Description",
+    "fields": [
+        {
+            "fieldName": "parameter",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "item",
+            "otherEntityRelationshipName": "descriptions",
+            "relationshipName": "item",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190402104212",
+    "entityTableName": "description",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

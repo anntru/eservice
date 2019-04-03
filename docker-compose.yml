@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+    service_db:
+        image: postgres
+        restart: always
+        ports:
+            - 5432:5432
+        environment:
+            POSTGRES_PASSWORD: posgres
+            POSTGRES_DB: service
+
+#docker-compose up
+#docker-compose up -d

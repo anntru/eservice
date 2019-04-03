@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.electricalequipment.eservice"
+    },
+    "jhipsterVersion": "5.8.2",
+    "applicationType": "monolith",
+    "baseName": "eservice",
+    "packageName": "com.electricalequipment.eservice",
+    "packageFolder": "com/electricalequipment/eservice",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YzEzZWZmMzM5ZWJmYTg4NjA0MGU1YTZiYTBmNmEyMmI3OTRlY2Q1MWFlODE0ZDliYmYzZjgzNmFiOTVjNGFjNjUyOTI1ZmMzZTY2ZGEyNGJiYjVhODMxZGMxYjM1ZDY2MWI4M2ViOWUzYmM0YjFmMjM2Njc2NzBiZTBkOGUwZGY=",
+    "clientFramework": "angularX",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [
+      "protractor"
+    ],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false
+  }
+}

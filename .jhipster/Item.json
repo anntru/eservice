@@ -1,0 +1,49 @@
+{
+    "name": "Item",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "category",
+            "fieldType": "Category",
+            "fieldValues": "PHONE,COMPUTER,TV,PS,CAMERA",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Status",
+            "fieldValues": "WORKING,BROKEN",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "comment",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "description",
+            "otherEntityRelationshipName": "item",
+            "relationshipName": "descriptions"
+        }
+    ],
+    "changelogDate": "20190402104211",
+    "entityTableName": "item",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

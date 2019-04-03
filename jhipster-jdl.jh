@@ -1,0 +1,27 @@
+entity Item {
+	name String required,
+    category Category required,
+    status Status required,
+    comment String
+    } 
+
+enum Status {
+WORKING, BROKEN
+}
+
+enum Category {
+	PHONE, COMPUTER, TV, PS, CAMERA
+}
+
+entity Description {
+	parameter String required
+}
+
+relationship OneToMany {
+Item{descriptions} to Description{item}
+}
+
+dto * with mapstruct
+paginate Item with infinite-scroll
+service all with serviceImpl
+
